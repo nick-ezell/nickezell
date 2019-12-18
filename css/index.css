@@ -123,6 +123,16 @@ textarea {
     border-radius: 5px;
 }
 
+.button2 {
+    font-size: 30px;
+    margin: 10px 0px;
+    margin-left: 50px;
+    padding: 20px 40px;
+    color: #fff;
+    background: #4aaaa5;
+    border-radius: 5px;
+}
+
 #factoids {
     display: flex;
     align-items: center;
