@@ -385,7 +385,7 @@ html {
             align-items: center;
             justify-content: center;
             color: #fff;
-            margin-left: 90px;
+            margin-left: 128px;
         
         }
         
@@ -394,7 +394,7 @@ html {
             align-items: center;
             justify-content: flex-end;
             width: 100vw;
-            padding-right: 90px;
+            margin-right: 130px;
         
         }
 
