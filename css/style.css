@@ -180,7 +180,6 @@ html {
         
         #header {
             background: #fff;
-            font-family: 'Georgia', Times, 'Times New Roman', serif;
             width: 100vw;
             height: 100px;
             border-bottom: solid #ccc 1px;
@@ -225,7 +224,6 @@ html {
         
         #container { /* width was 960px */
             width: 100vw;
-            font-family: 'Arial', 'Helvetica Neue', Helvetica, sans-serif;
             background: #fff;
             border: solid #ddd 1px;
             padding: 2.5%;
@@ -285,7 +283,7 @@ html {
         input {
             border-style: #777;
             font-size: 15px;
-            width: 90%;
+            width: 95.5%;
             margin: 10px 0px;
             padding: 5px;
             height: 30px;
@@ -295,7 +293,7 @@ html {
         textarea {
             font-size: 15px;
             border-style: #777;
-            width: 90%;
+            width: 95.5%;
             height: 250px;
             margin: 10px 0px;
             padding: 5px;
@@ -304,8 +302,8 @@ html {
         
         .button {
             font-size: 30px;
-            margin: 10px 0px;
-            margin-left: 48px;
+            margin: 10px 0px 10px 27%;
+            /* margin-left: 48px; */
             padding: 20px 40px;
             color: #fff;
             background: #4aaaa5;
@@ -498,7 +496,7 @@ html {
         #header {
             background: #fff;
             font-family: 'Georgia', Times, 'Times New Roman', serif;
-            width: 100vw;
+            width: 100%;
             height: 100px;
             border-bottom: solid #ccc 1px;
             display: flex;
@@ -509,7 +507,7 @@ html {
         }
         
         #logo {
-            width: 325px;
+            width: 35%;
             padding: 5px;
             background: #4aaaa5;
             display: flex;
@@ -524,7 +522,7 @@ html {
             display: flex;
             align-items: center;
             justify-content: flex-end;
-            width: 100%;
+            width: 65%;
             margin-right: 0px;
             padding: 0px;
         
@@ -545,8 +543,7 @@ html {
             font-family: 'Arial', 'Helvetica Neue', Helvetica, sans-serif;
             background: #fff;
             border: solid #ddd 1px;
-            
-            /* padding: 50px; */
+            /* padding: 2.5%; */
             margin-bottom: 50px;
             order: 2;
         }
@@ -568,6 +565,7 @@ html {
         /* 'About Me' header in main content area */
 
         header {
+            text-indent: 1em;
             border-bottom: solid #ccc 1.25px;
             margin-bottom: 50px;
             color: #4aaaa5;
@@ -593,6 +591,7 @@ html {
         /* Font size for input/textarea text */
 
         #contactForm {
+            margin-left: 2.5%;
             font-size: 20px;
             display: block;
             
@@ -601,10 +600,11 @@ html {
         /* Dimensions for contact text fields and buttons */
 
         input {
-            width: 50%;
+            width: 92.5%;
             border-style: #777;
             font-size: 15px;
             margin: 10px 0px;
+            margin-left: 2.5%;
             padding: 5px;
             /* height: 30px; */
             box-shadow: 5px 7px 5px #ccc;
@@ -613,16 +613,17 @@ html {
         textarea {
             font-size: 15px;
             border-style: #777;
-            width: 50%;
+            width: 92.5%;
             height: 250px;
             margin: 10px 0px;
+            margin-left: 2.5%;
             padding: 5px;
             box-shadow: 5px 7px 5px #ccc;
         }
         
         .button {
             font-size: 30px;
-            margin: 10px 0px;
+            margin: 10px 0px 10px 27%;
             padding: 20px 40px;
             color: #fff;
             background: #4aaaa5;
@@ -665,26 +666,28 @@ html {
         }
 
         #wrapper {
-            display: inline-block;
+            display: flex;
             justify-content: space-around;
             position: relative;
             box-shadow: 5px 7px 5px #ccc;
         }
         
         #portfolio {
+            margin: 2.5%;
             display: flex;
-            flex-flow: column;
-            flex-wrap: wrap;
+            flex-flow: row;
+            flex-wrap: nowrap;
             align-items: center;
             justify-content: space-around;
             order: 1;
         }
         
         #portfolio2 {
-            margin-top: 50px;
+            margin: 2.5%;
+            /* margin-top: 50px; */
             display: flex;
-            flex-flow: column;
-            flex-wrap: wrap;
+            flex-flow: row;
+            flex-wrap: nowrap;
             align-items: center;
             justify-content: space-around;
             order: 2;
@@ -937,7 +940,7 @@ html {
         
         .button {
             font-size: 30px;
-            margin: 10px 0px;
+            margin: 10px 0px 10px 30%;
             padding: 20px 40px;
             color: #fff;
             background: #4aaaa5;
