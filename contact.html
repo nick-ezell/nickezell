@@ -21,9 +21,31 @@
         </section>
 
         <section id="nav">
-            <a href="index.html">About</a>│
-            <a href="contact.html">Contact</a>│
-            <a href="portfolio.html">Portfolio</a>
+
+            <!--Trying to work on a hamburger menu-->
+            <!-- Just comment the m-menu-hide span and uncomment the a tags below for normal menu -->
+
+            <a id="main-menu-toggle" href="#main-menu" class="menu-toggle" aria-label="Open main menu">
+                <span class="sr-only">Open main menu</span>
+              <span class="fa fa-bars" aria-hidden="true"></span>
+            </a>
+
+            <nav id="main-menu" class="main-menu" aria-label="Main menu">
+                <a href="#main-menu-toggle" class="menu-close" id="main-menu-close" aria-label="Close main menu">
+                    <span class="sr-only">Close main menu</span>
+                  <span class="fa fa-close" aria-hidden="true"></span>
+                </a>
+                <ul>
+                <li><a href="index.html">About<span id="lineHide">│</span></a></li>
+                <li><a href="contact.html">Contact<span id="lineHide">│</span></a></li>
+                <li><a href="portfolio.html">Portfolio<span id="lineHide">│</span></a></li>
+            </nav>
+            <a href="#main-menu-toggle" class="backdrop" table-index="-1" aria-hidden="true" hidden></a>
+
+            <!-- <a href="index.html">About │ </span></a>
+            <a href="contact.html">Contact │ </span></a>
+            <a href="portfolio.html">Portfolio</span></a> -->
+
         </section>
 
     </div>
@@ -68,6 +90,7 @@
 
     </div>
 
+    <script src="https://kit.fontawesome.com/cf311dccc4.js" crossorigin="anonymous"></script>
 </body>
 
 </html>
