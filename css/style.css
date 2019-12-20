@@ -13,7 +13,7 @@ html {
 
 
 
-                                /* Mobile styles */
+                                /* Mobile styles p1 */
 
 
         /* Hamburger menu */
@@ -160,6 +160,8 @@ html {
   }
 }
 
+                        /* Mobile styles p2 */
+
 
     @media only screen and (max-width: 502px) {
         body {
@@ -220,19 +222,16 @@ html {
             margin-left: 52px;
             margin-right: 32px;
         }
-
-        .container {
-            padding: 30px;
-        }
         
         #container { /* width was 960px */
             width: 100vw;
             font-family: 'Arial', 'Helvetica Neue', Helvetica, sans-serif;
             background: #fff;
             border: solid #ddd 1px;
-            
-            /* padding: 50px; */
+            padding: 2.5%;
             margin-bottom: 50px;
+            margin-left: 5%;
+            margin-right: 5%;
             order: 2;
         }
 
@@ -286,7 +285,7 @@ html {
         input {
             border-style: #777;
             font-size: 15px;
-            width: 100%;
+            width: 90%;
             margin: 10px 0px;
             padding: 5px;
             height: 30px;
@@ -296,7 +295,7 @@ html {
         textarea {
             font-size: 15px;
             border-style: #777;
-            width: 100%;
+            width: 90%;
             height: 250px;
             margin: 10px 0px;
             padding: 5px;
@@ -857,9 +856,9 @@ html {
             margin-right: 25px;
         }
         
-        .container {
+        /* .container {
             padding: 30px;
-        }
+        } */
 
         #container {
             max-width: 960px;
@@ -868,7 +867,7 @@ html {
             background: #fff;
             border: solid #ddd 1px;
             margin: 40px 0px;
-            /*padding: 50px; (this helped center the page in small screens) */ 
+            padding: 2.5%;
             margin-bottom: 50px;
         }
         
