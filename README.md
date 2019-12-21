@@ -20,7 +20,7 @@ R  ___________________________________________
                  A  ___________________________________________\
                   S  ___________________________________________\
                    E  ___________________________________________\
-                    ?  ____________(╯°□°）╯︵ ┻━┻___________________\     
+                    ?  ____________(╯°□°）╯︵ ┻━┻__________________\     
 
     I tried to forgo the use of multiple css files here just to show to myself that I could, weird I know.
         I do realize, after the fact, that some of my code is a little superfluous and/or convoluted  while either being accomplished somewhere else or having no effect due to other inherited properties. This was an undertaking I tasked myself with knowing there would be difficulties. 
