@@ -1,0 +1,254 @@
+                        /* Hamburger menu */
+#lineHide {
+    visibility: hidden;
+}
+
+/* Screen reader only */
+.sr-only {
+position: absolute;
+width: 1px;
+height: 1px;
+padding: 0;
+margin: -1px;
+overflow: hidden;
+clip: rect(0,0,0,0);
+border: 0;
+}
+
+/* Button styling */
+.menu-toggle {
+display: inline-block;
+padding: .75em 15px;
+line-height: 1em;
+font-size: 1em;
+color: #777;
+}
+
+.menu-toggle:hover,
+.menu-toggle:focus {
+color: #4aaaa5;
+}
+
+/*
+Default styles + Mobile first
+Offscreen menu style
+*/
+.main-menu {
+position: absolute;
+display: none;
+left: -200px;
+top: 0;
+height: 100%;
+overflow-y: scroll;
+overflow-x: visible;
+transition: left 0.3s ease,
+  box-shadow 0.3s ease;
+z-index: 999;
+}
+
+.main-menu ul {
+list-style: none;
+margin: 0;
+padding: 2.5em 0 0;
+/* Hide shadow w/ -8px while 'closed' */
+-webkit-box-shadow: -8px 0 8px rgba(0,0,0,.5);
+-moz-box-shadow: -8px 0 8px rgba(0,0,0,.5);
+    box-shadow: -8px 0 8px rgba(0,0,0,.5);
+min-height: 100%;
+width: 200px;
+background: #fff;
+}
+
+.main-menu a {
+display: block;
+padding: .75em 15px;
+line-height: 1em;
+font-size: 1em;
+color: #4aaaa5;
+text-decoration: none;
+border-bottom: 1px solid #383838;
+}
+
+.main-menu li:first-child a {
+border-top: 1px solid #383838;
+}
+
+.main-menu a:hover,
+.main-menu a:focus {
+background: #ccc;
+text-decoration: underline;
+}
+
+.main-menu .menu-close {
+position: absolute;
+right: 0;
+top: 0;
+}
+
+/*
+On small devices, allow it to toggle...
+*/
+/*
+:target for non-JavaScript
+[aria-expanded] will be used if/when JavaScript is added to improve interaction, though it's completely optional.
+*/
+.main-menu:target,
+.main-menu[aria-expanded="true"] {
+display: block;
+left: 0;
+outline: none;
+-moz-box-shadow: 3px 0 12px rgba(0,0,0,.25);
+-webkit-box-shadow: 3px 0 12px rgba(0,0,0,.25);
+box-shadow: 3px 0 12px rgba(0,0,0,.25);
+}
+
+.main-menu:target .menu-close,
+.main-menu[aria-expanded="true"] .menu-close {
+z-index: 1001;
+}
+
+.main-menu:target ul,
+.main-menu[aria-expanded="true"] ul {
+position: relative;
+z-index: 1000;
+}
+
+/* 
+We could us `.main-menu:target:after`, but
+it wouldn't be clickable.
+*/
+.main-menu:target + .backdrop,
+.main-menu[aria-expanded="true"] + .backdrop{
+position: absolute;
+display: block;  
+left: 0;
+top: 0;
+width: 100%;
+height: 100%;
+z-index: 998;
+background: #000;
+background: rgba(0,0,0,.85);
+cursor: default;
+}
+
+@supports (position: fixed) {
+.main-menu,
+.main-menu:target + .backdrop,
+.main-menu[aria-expanded="true"] + .backdrop{
+position: fixed;
+}
+}
+@media only screen and (min-width: 960px) {
+    body {
+        background-image: url("../images/backgroundImage.jpg");
+        font-family: 'Montserrat', sans-serif;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        margin: 0;
+        padding: 0;
+    }
+    .wrapper {
+        position: relative;
+    }
+    #header {
+        background: #fff;
+        font-family: 'Montserrat', sans-serif;
+        width: 100vw;
+        height: 100px;
+        border-bottom: solid #ccc 1px;
+        display: flex;
+        flex-direction: row;
+        box-shadow: 5px 10px 10px #ccc;
+    }
+    #logo {
+        width: 325px;
+        padding: 5px;
+        background: #4aaaa5;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        color: #fff;
+        margin-left: 128px;
+    
+    }
+    
+    #nav {
+        display: flex;
+        align-items: center;
+        justify-content: flex-end;
+        width: 100vw;
+        margin-right: 130px;
+    
+    }
+    .container {
+        margin-top: 15vh;
+        align-items: center;
+        justify-content: center;
+        background-color: #dadada;
+        width: 60vw;
+        border:  solid .25em #cbcbcb;
+        border-radius: 10em;
+        box-shadow: 10px 10px 5px #ccc;
+    }
+    header {
+        width: 100%;
+        text-align: center;
+        padding-top: 2.5em;
+        padding-bottom: 1em;
+        border-bottom-color: #000;
+        color: #4aaaa5;
+    }
+    textarea {
+        resize: none;
+        color: #4aaaa5;
+        font-size: 18px;
+        height: 20vh;
+        width: 40vw;
+        text-align: center;
+        padding-top: 19vh;
+        margin-left: 10vw;
+        border: inset .25em #f2f3f7;
+        border-radius: .5em;
+    }
+    footer {
+        border-top-color: #000;
+        display: flex;
+        align-content: center;
+        justify-content: center;
+    }
+    #pageFoot {
+        height: 10vh;
+        width: 100vw;
+        background: #666;
+        border-top: solid #4aaaa5 8px;
+        color: #fff;
+        margin-top: 10vh;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        bottom: 0;
+        font-size: 15px;
+    }
+    a {
+        color: #fff;
+    }
+    button {
+        margin: 8%;
+        padding: 15px 50px;
+        text-transform: uppercase;
+        background: #4aaaa5;
+        border: solid .2em #40a7a1;
+        color: #fff;
+        font-weight: 600;
+        font-size: .75rem;
+        border-radius: 50px;
+        cursor: pointer;
+        transition: all .4s;
+    }
+    button:hover {
+            opacity: 0.8;
+            box-shadow: 10px 10px 5px #4aaaa5b6;;
+    }
+}
