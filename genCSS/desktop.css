@@ -186,7 +186,7 @@ position: fixed;
         margin-top: 15vh;
         align-items: center;
         justify-content: center;
-        background-color: #dadada;
+        background-color: #fff;
         width: 60vw;
         border:  solid .25em #cbcbcb;
         border-radius: 10em;
@@ -203,6 +203,7 @@ position: fixed;
     textarea {
         resize: none;
         color: #4aaaa5;
+        background: rgba(255, 255, 255, 0.941);
         font-size: 18px;
         height: 20vh;
         width: 40vw;
@@ -249,6 +250,6 @@ position: fixed;
     }
     button:hover {
             opacity: 0.8;
-            box-shadow: 10px 10px 5px #4aaaa5b6;;
+            box-shadow: 10px 10px 5px #4aaaa5b6;
     }
 }
