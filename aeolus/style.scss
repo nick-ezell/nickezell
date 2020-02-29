@@ -1,0 +1,105 @@
+@import "./mixins.scss";
+@import "./variables.scss";
+
+body {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: Optima, Segoe, "Segoe UI", Candara, Calibri, Arial, sans-serif;
+    font-size: 16px;
+    background: $backgroundImg;
+}
+header {
+    background: #4aaaa5;
+    color: #fff;
+    width: 100vw;
+    height: 5em;
+    margin-bottom: 2.5em;
+    box-shadow: 5px 3px 2.5px #999;
+    @include displayFlex;
+}
+.wrapper {
+    display: flex;
+    flex-direction: row;
+    margin: 1em;
+}
+.search, .forecast {
+    padding: .5em;
+    box-shadow: inset 0px 3px 3px 3px #dcdcdc;
+    height: auto;
+}
+.search {
+    border-color: #f0f0f0;
+    text-align: center;
+    display: table;
+    width: 30vw;
+    background: #f9f9f9;
+
+    h3 {
+        color: #777;
+    }
+}
+.searchBar {
+    display: table;
+    @include displayFlex;
+    margin-bottom: 1em;
+    button {
+        border: .05em solid #000;
+        color: #fff;
+        background: #4aaaa5;
+        border-radius: 0px 35px 35px 0px;
+        height: 2.85em;
+        width: 5em;
+        &:hover {
+            opacity: 0.7;
+            cursor: pointer;
+        }
+    }
+    input {
+        text-align: center;
+        // padding-top: .94em;
+        height: 1.7em;
+        font-size: 16px;
+        float: left;
+        border: .07em solid #000;
+        border-radius: 35px 0px 0px 35px;
+        resize: none;
+    }
+}
+section {
+    @include displayFlex;
+    height: 1.5em;
+    background: #dae2e3;
+    border: .05em solid #000;
+    margin: .025em;
+}
+.forecast {
+    margin-left: 1.5em;
+    width: 70vw;
+    background: #fff;
+}
+h2 {
+    @include displayFlex;
+}
+#currentCity {
+    padding: .5em;
+    border: .025em solid #999;
+}
+.fiveDayDiv {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    margin-top: .5em;
+}
+.fiveDay {
+    text-align: left;
+    background: #6aaaa5;
+    color: #fff;
+    font-size: 14px;
+    width: 10vw;
+    padding: .25em;
+}
+.fiveDayDate {
+    @include displayFlex;
+}
