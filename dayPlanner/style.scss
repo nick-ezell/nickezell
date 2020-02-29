@@ -1,0 +1,94 @@
+@import "./variables";
+@import "./mixins";
+
+body {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    background: $backgroundImg;
+    font-size: 16px;
+    font-family: Optima, Segoe, "Segoe UI", Candara, Calibri, Arial, sans-serif;
+}
+
+header {
+    @include flexCenter;
+    height: 7em;
+    background: #4aaaa5;
+    color: #fff;
+    box-shadow: 2.5px 5px 7px #777;
+}
+
+#key {
+    @include flexCenter;
+}
+
+.container {
+    @include flexCenter;
+    flex-direction: column;
+    width: auto;
+    background: #fff;
+    margin: 2.5em 5em 0 5em;
+    padding-top: 2.5em;
+    box-shadow: inset 0px 3px 3px 3px #dcdcdc;
+}
+
+.row {
+    display: table;
+    margin-bottom: 1em;
+}
+
+button {
+    @include buttonStyle;
+    float: left;
+
+    &:hover {
+        opacity: 0.7;
+        cursor: pointer;
+    }
+}
+
+#clear {
+    @include clearButton;
+}
+
+textarea {
+    padding-top: 1.5em;
+    float: left;
+    resize: none;
+    @include flexCenter;
+    text-align: center;
+    height: 2.75em;
+    width: 50vw;
+    border-radius: 35px 0px 0px 35px;
+}
+
+footer {
+    height: 10vh;
+    width: 100vw;
+    background: #666;
+    border-top: solid #4aaaa5 8px;
+    color: #fff;
+    margin-top: 10vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    bottom: 0;
+    font-size: 15px;
+}
+
+a {
+    text-decoration: wavy;
+    color: #fff;
+}
+
+#past {
+    color: lightgrey;
+}
+
+#present {
+    color: lightblue;
+}
+
+#future {
+    color: #8a49b3;
+}
