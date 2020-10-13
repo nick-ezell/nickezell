@@ -347,7 +347,7 @@ html {
 
         .socMedia {
             display: flex;
-            margin-left: 33vw;
+            margin-left: 30vw;
         }
 
         #linkedIn {
@@ -360,7 +360,7 @@ html {
 
         #twitter, #linkedIn {
             height: 10vh;
-            width: 5vw;
+            width: 12.5vw;
             transition: all .4s;
             cursor: pointer;
         }
@@ -480,6 +480,24 @@ html {
         }
         
         #rockPS {
+            width: 250px;
+            height: 200px;
+        }
+
+        .nerdHerd {
+            background: #4aaaa5;
+            color: #fff;
+            height: 50px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            position: absolute;
+            left: 0;
+            right: 0;
+            bottom: 30px;
+        }
+        
+        #nerdHerd {
             width: 250px;
             height: 200px;
         }
@@ -699,7 +717,7 @@ html {
 
         #twitter, #linkedIn {
             height: 10vh;
-            width: 5vw;
+            width: 12.5vw;
             transition: all .4s;
             cursor: pointer;
         }
